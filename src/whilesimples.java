@@ -1,4 +1,4 @@
-public class EstruturaDeRepeticao {
+public class whilesimples {
     public static void main(String[] args){
         int numero = 10;
 
