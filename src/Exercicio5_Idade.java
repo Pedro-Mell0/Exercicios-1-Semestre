@@ -1,23 +1,22 @@
-import javax.swing.*;
+import javax.swing.JOptionPane;
 public class Exercicio5_Idade {
-    public static void main (String[] args) {
+    public static void main (String[]args){
 
-
+        int Pessoas = 10;
+        int MaioresDeIdade = 0;
         int idade;
-        int cont = 0;
-        for(int i = 0; i < 11;){
 
-            idade = Integer.parseInt(JOptionPane.showInputDialog("Digite sua idade: "));}
 
-        if (idade > 17){
-            cont++;
+        for (int i =0; i < 10; i++){
+            idade = Integer.parseInt(JOptionPane.showInputDialog("Pessoa " + (i + 1) + " Digite a sua idade: "));
+
+            if(idade > 17 ){
+                MaioresDeIdade++;
+            }
+
         }
-        JOptionPane.showInputDialog("A quantidade de maiores de idade é: " + cont);
 
-
-
+        JOptionPane.showMessageDialog(null, "Das 10 pessoas " + MaioresDeIdade + " são maiores de idade.");
     }
 }
-
-
 
