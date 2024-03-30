@@ -1,3 +1,5 @@
+package Exercícios;
+
 import javax.swing.JOptionPane;
 public class Exercicio6_FaixasEtarias {
     public static void main (String[]args){

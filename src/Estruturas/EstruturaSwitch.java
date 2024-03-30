@@ -1,3 +1,5 @@
+package Estruturas;
+
 public class EstruturaSwitch {
     public static void main (String []args){
         int nota = 70;

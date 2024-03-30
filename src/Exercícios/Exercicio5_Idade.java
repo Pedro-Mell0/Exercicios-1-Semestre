@@ -1,3 +1,5 @@
+package Exercícios;
+
 import javax.swing.JOptionPane;
 public class Exercicio5_Idade {
     public static void main (String[]args){

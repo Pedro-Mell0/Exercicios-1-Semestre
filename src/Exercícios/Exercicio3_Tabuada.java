@@ -1,3 +1,5 @@
+package Exercícios;
+
 public class Exercicio3_Tabuada {
     public static void main(String[]args){
         int i = 1;

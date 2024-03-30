@@ -1,3 +1,5 @@
+package Exercícios;
+
 public class Exercicio2While_Do_For_Reverse {
     public static void main(String[] args){
         int i = 10;

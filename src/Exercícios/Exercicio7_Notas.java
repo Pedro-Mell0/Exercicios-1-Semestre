@@ -1,3 +1,5 @@
+package Exercícios;
+
 import javax.swing.JOptionPane;
 public class Exercicio7_Notas {
     public static void main (String[] args){

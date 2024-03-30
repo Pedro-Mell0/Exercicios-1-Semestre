@@ -1,3 +1,5 @@
+package Estruturas;
+
 public class EstruturaFor {
     public static void main(String[] args){
         int numero = 10;

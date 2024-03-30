@@ -1,3 +1,5 @@
+package Estruturas;
+
 import javax.swing.JOptionPane;
 public class EstruturaIfJOption {
     public static void main (String[]args){
