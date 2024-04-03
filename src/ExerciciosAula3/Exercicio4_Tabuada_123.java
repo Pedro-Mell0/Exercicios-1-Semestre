@@ -1,4 +1,4 @@
-package Exercícios;
+package ExerciciosAula3;
 
 public class Exercicio4_Tabuada_123 {
     public static void main (String[] args){

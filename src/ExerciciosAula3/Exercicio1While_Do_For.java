@@ -1,4 +1,4 @@
-package Exercícios;
+package ExerciciosAula3;
 
 public class Exercicio1While_Do_For {
     public static void main (String[] args) {

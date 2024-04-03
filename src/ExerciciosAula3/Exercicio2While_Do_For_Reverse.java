@@ -1,4 +1,4 @@
-package Exercícios;
+package ExerciciosAula3;
 
 public class Exercicio2While_Do_For_Reverse {
     public static void main(String[] args){
