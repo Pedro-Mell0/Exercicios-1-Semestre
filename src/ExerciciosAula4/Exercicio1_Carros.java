@@ -12,18 +12,15 @@ public class Exercicio1_Carros {
 
     public String getModelo() { //Metodo get para atributo 1
         return modelo;
-
     }
 
     public void setModelo(String modelo) { //Metodo set para atributo 1
         this.modelo = modelo;
-
     }
 
 
     public String getAno() {// Metodo get para atributo 2
         return ano;
-
     }
 
 
