@@ -18,7 +18,7 @@ public class DiarioDeNotas {
 
         if (usuario == 0) {
             JOptionPane.showMessageDialog(null, "Bem vindo Aluno");
-            int nomeAluno =  Integer.parseInt(JOptionPane.showInputDialog("Digite seu nome"));
+            int nomeAluno =  Integer.parseInt(JOptionPane.showInputDialog("Digite seu nome"));  
 
         } else if (usuario == 1) {
 
