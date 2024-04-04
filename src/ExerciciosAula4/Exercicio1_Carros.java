@@ -50,6 +50,16 @@ public class Exercicio1_Carros {
         meuCarro.velocidade(); //Chama o metodo velocidade
 
 
+        meuCarro.setModelo(null); //Atualizar modelo
+        meuCarro.setAno(null); //Atualizar ano
+
+        // remover barras abaixo para mostrar informações atualizadas
+        // meuCarro.exibirInformacoes();
+
+
+
+
+
 
 
 
