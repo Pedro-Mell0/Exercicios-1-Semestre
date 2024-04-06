@@ -5,7 +5,7 @@ public class EstruturaFor {
         int numero = 10;
 
 
-        for(int i = 0; i < numero; i+=2 ){
+        for (int i = 0; i < numero; i += 2) {
             System.out.println(i);
         }
 

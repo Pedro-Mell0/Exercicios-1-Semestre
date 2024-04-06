@@ -1,11 +1,12 @@
 package ExerciciosAula4;
 
 import javax.swing.JOptionPane;
-public class Exercicio1_Carros {
+
+class Exercicio1_carros {
     private String modelo;
     private String ano;
 
-    public Exercicio1_Carros(String modelo, String ano) { // classe
+    public Exercicio1_carros(String modelo, String ano) { // classe
         this.modelo = modelo; //Atributo 1
         this.ano = ano;// Atributo 2
     }
@@ -40,8 +41,8 @@ public class Exercicio1_Carros {
 
     }
 
-    public static void main (String []args){
-        Exercicio1_Carros meuCarro = new Exercicio1_Carros("Tiggo 7 Sport", "2025");
+    public static void main(String[] args) {
+        Exercicio1_carros meuCarro = new Exercicio1_carros("Tiggo 7 Sport", "2025");
 
         meuCarro.exibirInformacoes(); //Chama o metodo com o modelo e o ano do carro
         meuCarro.velocidade(); //Chama o metodo velocidade
@@ -52,19 +53,6 @@ public class Exercicio1_Carros {
 
         // remover barras abaixo para mostrar informações atualizadas
         // meuCarro.exibirInformacoes();
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
     }

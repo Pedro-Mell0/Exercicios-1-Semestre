@@ -4,6 +4,7 @@ import javax.swing.JOptionPane;
 import java.util.ArrayList;
 import javax.swing.JList;
 import java.util.Arrays;
+
 public class DiarioDeNotas {
     public static void main(String[] args) {
         int A1;
@@ -18,13 +19,13 @@ public class DiarioDeNotas {
 
         if (usuario == 0) {
             JOptionPane.showMessageDialog(null, "Bem vindo Aluno");
-            int nomeAluno =  Integer.parseInt(JOptionPane.showInputDialog("Digite seu nome"));  
+            int nomeAluno = Integer.parseInt(JOptionPane.showInputDialog("Digite seu nome"));
 
         } else if (usuario == 1) {
 
             JOptionPane.showMessageDialog(null, "Bem-vindo professor!");
-            JOptionPane.showMessageDialog(null,"Selecione seu nome: " );
-            JList list = new JList(new String[] {"Danilo Miguel", "Tulio Vivaldini"});
+            JOptionPane.showMessageDialog(null, "Selecione seu nome: ");
+            JList list = new JList(new String[]{"Danilo Miguel", "Tulio Vivaldini"});
             JOptionPane.showMessageDialog(
                     null, list, "Professor", JOptionPane.PLAIN_MESSAGE);
             System.out.println(Arrays.toString(list.getSelectedIndices()));

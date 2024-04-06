@@ -7,7 +7,7 @@ public class Exercicio8_Fatorial {
 
 
         int numero;
-       numero = Integer.parseInt(JOptionPane.showInputDialog("Digite um número para ser fatorado:"));
+        numero = Integer.parseInt(JOptionPane.showInputDialog("Digite um número para ser fatorado:"));
 
 
         long fatorial = 1;
@@ -15,6 +15,6 @@ public class Exercicio8_Fatorial {
             fatorial *= i;
         }
 
-        JOptionPane.showMessageDialog(null, "O valor de: " + numero + " fatorado é: " + fatorial );
+        JOptionPane.showMessageDialog(null, "O valor de: " + numero + " fatorado é: " + fatorial);
     }
 }

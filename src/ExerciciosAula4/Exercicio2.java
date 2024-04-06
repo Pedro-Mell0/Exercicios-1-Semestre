@@ -54,7 +54,7 @@ public class Exercicio2 {
 
     }
 
-    public void RPM() {
+    public void Destino() {
 
         int numeroAleatorio2 = (int) (Math.random() * 199) + 2;
         JOptionPane.showMessageDialog(null, "Faltam " + numeroAleatorio2 + "Km para chegar no destino");
@@ -67,6 +67,7 @@ public class Exercicio2 {
         JOptionPane.showMessageDialog(null, "Ano do 1º veículo: " + ano);
         JOptionPane.showMessageDialog(null, "Cor do 1º veículo: " + cor);
     }
+
     public void exibirInformacoes2() { //Metodo para exibir o modelo e o ano do carro
         JOptionPane.showMessageDialog(null, "Marca do 2º veículo: " + marca);
         JOptionPane.showMessageDialog(null, "Modelo do 2º veículo: " + modelo);
@@ -75,43 +76,33 @@ public class Exercicio2 {
     }
 
 
-        public static void main (String[]args){
-            Exercicio2 meuCarro1 = new Exercicio2("Caoa Cherry", "Tiggo 7 sport", "2025", "Cinza");
-            Exercicio2 meuCarro2 = new Exercicio2("Jeep", "Jeep Compass", "2024", "Cinza");
-            meuCarro1.exibirInformacoes();
-            meuCarro1.velocidade();
-            meuCarro1.RPM();
-            meuCarro2.exibirInformacoes2();
-            meuCarro2.velocidade();
-            meuCarro2.RPM();
+    public static void main(String[] args) {
+        Exercicio2 meuCarro1 = new Exercicio2("Caoa Cherry", "Tiggo 7 sport", "2025", "Cinza");
+        Exercicio2 meuCarro2 = new Exercicio2("Jeep", "Jeep Compass", "2024", "Cinza");
+        meuCarro1.exibirInformacoes();
+        meuCarro1.velocidade();
+        meuCarro1.Destino();
+        meuCarro2.exibirInformacoes2();
+        meuCarro2.velocidade();
+        meuCarro2.Destino();
 
 
+        meuCarro1.setMarca(null);
+        meuCarro1.setModelo(null);
+        meuCarro1.setAno(null);
+        meuCarro1.setCor(null);
 
-            meuCarro1.setMarca(null);
-            meuCarro1.setModelo(null);
-            meuCarro1.setAno(null);
-            meuCarro1.setCor(null);
-
-            meuCarro2.setMarca(null);
-            meuCarro2.setModelo(null);
-            meuCarro2.setAno(null);
-            meuCarro2.setCor(null);
-
+        meuCarro2.setMarca(null);
+        meuCarro2.setModelo(null);
+        meuCarro2.setAno(null);
+        meuCarro2.setCor(null);
 
 
-            // remover barras abaixo para mostrar informações atualizadas
-            // meuCarro.exibirInformacoes();
+        // remover barras abaixo para mostrar informações atualizadas
+        // meuCarro.exibirInformacoes();
 
 
-
-
-
-
-
-
-
-
-        }
+    }
 }
 
 

@@ -1,13 +1,13 @@
 package Estruturas;
 
 public class EstruturaWhileDo {
-    public static void main(String[]args){
+    public static void main(String[] args) {
         int numero = 10;
-        do{
+        do {
             System.out.println(numero);
             numero++;
         }
-        while( numero <= 20);
+        while (numero <= 20);
         numero++;
         System.out.println(numero);
     }

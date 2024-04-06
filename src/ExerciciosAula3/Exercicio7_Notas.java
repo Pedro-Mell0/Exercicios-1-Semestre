@@ -1,8 +1,9 @@
 package ExerciciosAula3;
 
 import javax.swing.JOptionPane;
+
 public class Exercicio7_Notas {
-    public static void main (String[] args){
+    public static void main(String[] args) {
 
         int Alunos = 10;
         double MaiorNota = Double.MIN_VALUE;
@@ -12,16 +13,16 @@ public class Exercicio7_Notas {
         double Notas;
 
 
-        for (int i =0; i < 10; i++){
+        for (int i = 0; i < 10; i++) {
             String input = (JOptionPane.showInputDialog("Digite a nota do " + (i + 1) + " aluno: "));
             double nota = Double.parseDouble(input);
 
             soma += nota;
 
 
-            if(nota > MaiorNota ){
+            if (nota > MaiorNota) {
                 MaiorNota = nota;
-            }else if(nota < MenorNota){
+            } else if (nota < MenorNota) {
                 MenorNota = nota;
             }
 
@@ -30,12 +31,6 @@ public class Exercicio7_Notas {
         double MediaNotas = soma / Alunos;
 
         JOptionPane.showMessageDialog(null, "A maior nota da sala foi: " + MaiorNota + " A menor nota da sala foi: " + MenorNota + " A média das notas da sala foi: " + MediaNotas);
-
-
-
-
-
-
 
 
     }

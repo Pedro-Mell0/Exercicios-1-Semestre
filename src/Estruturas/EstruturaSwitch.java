@@ -1,20 +1,20 @@
 package Estruturas;
 
 public class EstruturaSwitch {
-    public static void main (String []args){
+    public static void main(String[] args) {
         int nota = 70;
 
-        switch(nota){
+        switch (nota) {
             case 70:
                 System.out.println("Aprovado com conceito C");
                 break;
 
             case 80:
-                    System.out.println("Aprovado com conceito B");
-                    break;
+                System.out.println("Aprovado com conceito B");
+                break;
             case 90:
-                    System.out.println("Aprovado com conceito A");
-                    break;
+                System.out.println("Aprovado com conceito A");
+                break;
         }
     }
 }
