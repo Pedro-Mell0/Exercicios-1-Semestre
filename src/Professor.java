@@ -23,6 +23,11 @@ public class Professor {
     }
 
 
+    public void ExibirDadosProfessor() {
+        JOptionPane.showMessageDialog(null, "O nome do professor é: " + nome);
+        JOptionPane.showMessageDialog(null, "A idade do professor é: " + idade);
+        JOptionPane.showMessageDialog(null, "O email do professor é: " + email);
+    }
 
 
 

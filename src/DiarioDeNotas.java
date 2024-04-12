@@ -1,4 +1,3 @@
-
 import javax.swing.JOptionPane;
 import java.util.ArrayList;
 import javax.swing.JList;
@@ -50,6 +49,12 @@ public class DiarioDeNotas {
                     break;
 
             }
+
+
+
+
+
+
 
 
 
