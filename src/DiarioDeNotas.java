@@ -17,7 +17,7 @@ public class DiarioDeNotas {
             String[] opcoes = {"Aluno", "Professor"};
 
 
-            int usuario = JOptionPane.showOptionDialog(null, "Você é um aluno ou um professor?:", "Escolha",
+            int usuario = JOptionPane.showOptionDialog(null, "Você é um aluno ou um professor?", "Escolha",
                     JOptionPane.DEFAULT_OPTION, JOptionPane.QUESTION_MESSAGE, null, opcoes, opcoes[0]);
 
             switch (usuario) {
@@ -25,17 +25,21 @@ public class DiarioDeNotas {
                 case 0:
                     aluno.IdentificarAluno();
                     aluno.alterarNome();
+                    JOptionPane.showMessageDialog(null, "Bem-vindo " + aluno.nome);
                     aluno.alterarIdade();
                     aluno.alterarRA();
                     aluno.alterarEmail();
+                    aluno.ConfirmarDadosAluno();
                     break;
 
                 case 1:
 
                     professor.IdentificarProfessor();
                     professor.alterarNome();
+                    JOptionPane.showMessageDialog(null, "Bem-vindo " + professor.nome);
                     professor.alterarEmail();
                     professor.alterarIdade();
+                    professor.ConfirmarDadosProfessor();
 
                     JOptionPane.showMessageDialog(null, "Digite as notas das avaliações.");
 
@@ -45,7 +49,7 @@ public class DiarioDeNotas {
                     A3 = Integer.parseInt(JOptionPane.showInputDialog("Digite a nota da A3:"));
                     int soma = A1 + A2 + A3;
                     int media = soma / 3;
-                    JOptionPane.showMessageDialog(null, "A soma das notas é: " + soma + "\n " + "A média do aluno é: " + media);
+                    JOptionPane.showMessageDialog(null, "A soma das notas é: " + soma + "\n " + "A média das notas é: " + media);
                     break;
 
             }

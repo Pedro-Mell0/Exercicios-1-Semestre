@@ -9,7 +9,7 @@ public class Aluno {
 
 
     public void IdentificarAluno() {
-        JOptionPane.showMessageDialog(null, "Bem-vindo aluno" + "\n" + "Insira seus dados: ");
+        JOptionPane.showMessageDialog(null, "Insira seus dados: ");
 
     }
 
@@ -34,8 +34,15 @@ public class Aluno {
         JOptionPane.showMessageDialog(null, "A idade do aluno é: " + idade);
         JOptionPane.showMessageDialog(null, "O email do aluno é: " + email);
         JOptionPane.showMessageDialog(null, "O RA do aluno é: " + RA);
-
     }
+
+
+    public void ConfirmarDadosAluno() {
+        JOptionPane.showMessageDialog(null, "Por favor, confirme os dados: ");
+        JOptionPane.showMessageDialog(null, "Nome: " + nome + "\n" + "Idade: " + idade + "\n" + "Email: " + email + "\n" + "RA: " + RA);
+    }
+
+
 }
 
 
