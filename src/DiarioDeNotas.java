@@ -10,10 +10,10 @@ public class DiarioDeNotas {
             Aluno aluno = new Aluno();
             Professor professor = new Professor();
 
-
             int A1;
             int A2;
             int A3;
+
             String[] opcoes = {"Aluno", "Professor"};
 
 
