@@ -4,8 +4,9 @@ public class Aluno {
 
     public String nome;
     public int idade;
-    public String RA;
+    public int RA;
     public String email;
+    public String telefone;
 
 
     public void IdentificarAluno() {
@@ -26,7 +27,11 @@ public class Aluno {
     }
 
     public void alterarRA() {
-        RA = JOptionPane.showInputDialog("Digite seu RA");
+        RA = Integer.parseInt(JOptionPane.showInputDialog("Digite seu RA"));
+    }
+
+    public void alterarTelefone() {
+        telefone = JOptionPane.showInputDialog("Digite seu telefone:");
     }
 
     public void ExibirDadosAluno() {
@@ -34,16 +39,18 @@ public class Aluno {
         JOptionPane.showMessageDialog(null, "A idade do aluno é: " + idade);
         JOptionPane.showMessageDialog(null, "O email do aluno é: " + email);
         JOptionPane.showMessageDialog(null, "O RA do aluno é: " + RA);
+        JOptionPane.showMessageDialog(null, "O Telefone do aluno é " + telefone);
     }
 
 
     public void ConfirmarDadosAluno() {
         JOptionPane.showMessageDialog(null, "Por favor, confirme os dados: ");
-        JOptionPane.showMessageDialog(null, "Nome: " + nome + "\n" + "Idade: " + idade + "\n" + "Email: " + email + "\n" + "RA: " + RA);
+        JOptionPane.showMessageDialog(null, "Nome: " + nome + "\n" + "Idade: " + idade + "\n" + "Email: " + email + "\n" + "RA: " + RA + "\n" + "Telefone: " + telefone);
     }
 
 
 }
+
 
 
 

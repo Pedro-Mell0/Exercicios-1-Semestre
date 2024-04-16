@@ -29,6 +29,7 @@ public class DiarioDeNotas {
                     aluno.alterarIdade();
                     aluno.alterarRA();
                     aluno.alterarEmail();
+                    aluno.alterarTelefone();
                     aluno.ConfirmarDadosAluno();
                     break;
 
