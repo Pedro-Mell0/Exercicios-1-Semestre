@@ -1,72 +1,38 @@
 import javax.swing.JOptionPane;
-import java.util.ArrayList;
-import javax.swing.JList;
-import java.util.Arrays;
 
 public class DiarioDeNotas {
 
+    public static void main(String[] args) {
+        Aluno aluno = new Aluno();
+        Professor professor = new Professor();
 
-        public void main(String[] args) {
-            Aluno aluno = new Aluno();
-            Professor professor = new Professor();
+        String[] opcoes = {"Aluno", "Professor"};
 
-            int A1;
-            int A2;
-            int A3;
+        int usuario = JOptionPane.showOptionDialog(null, "Você é um aluno ou um professor?", "Escolha",
+                JOptionPane.DEFAULT_OPTION, JOptionPane.QUESTION_MESSAGE, null, opcoes, opcoes[0]);
 
-            String[] opcoes = {"Aluno", "Professor"};
+        switch (usuario) {
 
+            case 0:
+                aluno.IdentificarAluno();
+                aluno.setNome();
+                JOptionPane.showMessageDialog(null, "Bem-vindo " + aluno.getNome());
+                aluno.setIdade();
+                aluno.setRA();
+                aluno.setEmail();
+                aluno.setTelefone();
+                aluno.ConfirmarDadosAluno();
+                break;
 
-            int usuario = JOptionPane.showOptionDialog(null, "Você é um aluno ou um professor?", "Escolha",
-                    JOptionPane.DEFAULT_OPTION, JOptionPane.QUESTION_MESSAGE, null, opcoes, opcoes[0]);
-
-            switch (usuario) {
-
-                case 0:
-                    aluno.IdentificarAluno();
-                    aluno.alterarNome();
-                    JOptionPane.showMessageDialog(null, "Bem-vindo " + aluno.nome);
-                    aluno.alterarIdade();
-                    aluno.alterarRA();
-                    aluno.alterarEmail();
-                    aluno.alterarTelefone();
-                    aluno.ConfirmarDadosAluno();
-                    break;
-
-                case 1:
-
-                    professor.IdentificarProfessor();
-                    professor.alterarNome();
-                    JOptionPane.showMessageDialog(null, "Bem-vindo " + professor.nome);
-                    professor.alterarEmail();
-                    professor.alterarIdade();
-                    professor.ConfirmarDadosProfessor();
-
-                    JOptionPane.showMessageDialog(null, "Digite as notas das avaliações.");
-
-
-                    A1 = Integer.parseInt(JOptionPane.showInputDialog("Digite a nota da A1:"));
-                    A2 = Integer.parseInt(JOptionPane.showInputDialog("Digite a nota da A2:"));
-                    A3 = Integer.parseInt(JOptionPane.showInputDialog("Digite a nota da A3:"));
-                    int soma = A1 + A2 + A3;
-                    int media = soma / 3;
-                    JOptionPane.showMessageDialog(null, "A soma das notas é: " + soma + "\n " + "A média das notas é: " + media);
-                    break;
-
-            }
-
-
-
-
-
-
-
-
-
-
-
-
-
+            case 1:
+                professor.IdentificarProfessor();
+                professor.setNome();
+                JOptionPane.showMessageDialog(null, "Bem-vindo " + professor.getNome());
+                professor.setEmail();
+                professor.setIdade();
+                professor.ConfirmarDadosProfessor();
+                professor.Notas();
+                break;
         }
     }
-
+}
