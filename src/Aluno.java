@@ -14,6 +14,8 @@ public class Aluno {
 
     }
 
+    //MÉTODOS ALTERAR
+
     public void alterarNome() {
         nome = JOptionPane.showInputDialog("Digite o seu nome:");
     }
@@ -33,6 +35,7 @@ public class Aluno {
     public void alterarTelefone() {
         telefone = JOptionPane.showInputDialog("Digite seu telefone:");
     }
+    // FIM METODOS ALTERAR
 
     // GETTERS E SETTERS
 
@@ -81,8 +84,6 @@ public class Aluno {
     }
 
     // FIM GETTERS E SETTERS
-
-
 
 
     public void ExibirDadosAluno() {

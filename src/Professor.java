@@ -3,18 +3,19 @@ import javax.swing.*;
 public class Professor { // INÍCIO
 
 
-     private String nome;
-     private int idade;
-     private String email;
-     private int A1;
-     private int A2;
-     private int A3;
+    private String nome;
+    private int idade;
+    private String email;
+    private int A1;
+    private int A2;
+    private int A3;
 
 
     public void IdentificarProfessor() {
         JOptionPane.showMessageDialog(null, "Insira seus dados: ");
     }
 
+    //MÉTODOS ALTERAR
 
     public void alterarNome() {
         nome = JOptionPane.showInputDialog("Digite o seu nome:");
@@ -30,6 +31,7 @@ public class Professor { // INÍCIO
         email = JOptionPane.showInputDialog("Digite seu email:");
     }
 
+    // FIM METODOS ALTERAR
 
     // GETTERS E SETTERS
 
@@ -92,12 +94,10 @@ public class Professor { // INÍCIO
     }
 
 
-
     public void ConfirmarDadosProfessor() {
         JOptionPane.showMessageDialog(null, "Por favor, confirme os dados: ");
         JOptionPane.showMessageDialog(null, "Nome: " + nome + "\n" + "Idade: " + idade + "\n" + "Email: " + email);
     }
-
 
 
     public void Notas() {
