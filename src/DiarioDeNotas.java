@@ -8,29 +8,25 @@ public class DiarioDeNotas {
 
         String[] opcoes = {"Aluno", "Professor"};
 
-        int usuario = JOptionPane.showOptionDialog(null, "Você é um aluno ou um professor?", "Escolha",
+        int user = JOptionPane.showOptionDialog(null, "Você é um aluno ou um professor?", "Escolha",
                 JOptionPane.DEFAULT_OPTION, JOptionPane.QUESTION_MESSAGE, null, opcoes, opcoes[0]);
 
-        switch (usuario) {
+        switch (user) {
 
             case 0:
-                aluno.IdentificarAluno();
+                aluno.IserirDados();
                 aluno.setNome();
                 JOptionPane.showMessageDialog(null, "Bem-vindo " + aluno.getNome());
-                aluno.setIdade();
-                aluno.setRA();
-                aluno.setEmail();
-                aluno.setTelefone();
-                aluno.ConfirmarDadosAluno();
+                aluno.IdentificarUsuario();
+                aluno.ConfirmarDados();
                 break;
 
             case 1:
-                professor.IdentificarProfessor();
+                professor.IserirDados();
                 professor.setNome();
                 JOptionPane.showMessageDialog(null, "Bem-vindo " + professor.getNome());
-                professor.setEmail();
-                professor.setIdade();
-                professor.ConfirmarDadosProfessor();
+                professor.IdentificarUsuario();
+                professor.ConfirmarDados();
                 professor.Notas();
                 break;
         }

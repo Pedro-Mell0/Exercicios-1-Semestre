@@ -1,64 +1,14 @@
 import javax.swing.*;
 
-public class Professor { // INÍCIO
+public class Professor extends usuario { // INÍCIO
 
 
-    private String nome;
-    private int idade;
-    private String email;
     private int A1;
     private int A2;
     private int A3;
 
 
-    public void IdentificarProfessor() {
-        JOptionPane.showMessageDialog(null, "Insira seus dados: ");
-    }
-
-    //MÉTODOS ALTERAR
-
-    public void alterarNome() {
-        nome = JOptionPane.showInputDialog("Digite o seu nome:");
-    }
-
-
-    public void alterarIdade() {
-        idade = Integer.parseInt(JOptionPane.showInputDialog("Digite sua idade:"));
-    }
-
-
-    public void alterarEmail() {
-        email = JOptionPane.showInputDialog("Digite seu email:");
-    }
-
-    // FIM METODOS ALTERAR
-
     // GETTERS E SETTERS
-
-    public String getNome() {
-        return nome;
-    }
-
-    public void setNome() {
-        nome = JOptionPane.showInputDialog("Digite o seu nome:");
-    }
-
-
-    public int getIdade() {
-        return idade;
-    }
-
-    public void setIdade() {
-        idade = Integer.parseInt(JOptionPane.showInputDialog("Digite sua idade:"));
-    }
-
-    public String getEmail() {
-        return email;
-    }
-
-    public void setEmail() {
-        email = JOptionPane.showInputDialog("Digite seu email:");
-    }
 
     public int getA1() {
         return A1;
@@ -87,17 +37,14 @@ public class Professor { // INÍCIO
     //  FIM GETTERS E SETTERS
 
 
-    public void ExibirDadosProfessor() {
-        JOptionPane.showMessageDialog(null, "O nome do professor é: " + nome);
-        JOptionPane.showMessageDialog(null, "A idade do professor é: " + idade);
-        JOptionPane.showMessageDialog(null, "O email do professor é: " + email);
+
+@Override
+    public void IdentificarUsuario() {
+        setEmail();
+        setIdade();
+        setTelefone();
     }
 
-
-    public void ConfirmarDadosProfessor() {
-        JOptionPane.showMessageDialog(null, "Por favor, confirme os dados: ");
-        JOptionPane.showMessageDialog(null, "Nome: " + nome + "\n" + "Idade: " + idade + "\n" + "Email: " + email);
-    }
 
 
     public void Notas() {
