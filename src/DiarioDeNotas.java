@@ -1,6 +1,8 @@
 import javax.swing.JOptionPane;
 
-public class DiarioDeNotas {
+public class DiarioDeNotas { // INÍCIO
+
+                                                      // INÍCIO MAIN
 
     public static void main(String[] args) {
         Aluno aluno = new Aluno();
@@ -30,5 +32,13 @@ public class DiarioDeNotas {
                 professor.Notas();
                 break;
         }
+
     }
-}
+
+                                                        // FIM MAIN
+
+
+
+
+
+} // FIM

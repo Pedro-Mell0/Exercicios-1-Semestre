@@ -1,11 +1,10 @@
 import javax.swing.*;
 
-public class Aluno extends usuario{
+public class Aluno extends usuario{  // INÍCIO
 
     private int RA;
 
-    // GETTERS E SETTERS
-
+                                                // GETTERS E SETTERS
 
     public int getRA() {
         return RA;
@@ -16,9 +15,10 @@ public class Aluno extends usuario{
     }
 
 
-    // FIM GETTERS E SETTERS
+                                              // FIM GETTERS E SETTERS
 
 
+                                                 // INÍCIO MÉTODOS
 
     @Override
     public void IdentificarUsuario() {
@@ -35,7 +35,9 @@ public class Aluno extends usuario{
         JOptionPane.showMessageDialog(null, "Nome: " + getNome() + "\n" + "Idade: " + getIdade() + "\n" + "Email: " + getEmail() + "\n" + "RA: " + RA + "\n" + "Telefone: " + getTelefone());
     }
 
-}
+                                                 // FIM MÉTODOS
+
+} // FIM
 
 
 
