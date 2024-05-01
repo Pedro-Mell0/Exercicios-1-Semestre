@@ -2,22 +2,32 @@ import javax.swing.JOptionPane;
 
 public class usuario { // INÍCIO
 
-      // Atributos
+    // Atributos
     private String nome;
     private int idade;
     private String email;
     private int telefone;
+    private int A1;
+    private int A2;
+    private int A3;
 
 
-                                                // GETTERS E SETTERS
+    // GETTERS E SETTERS
 
+    public int getA1() {
+        return A1;
+    }
+
+    public int getA2() {
+        return A2;
+    }
+
+    public int getA3() {
+        return A3;
+    }
 
     public int getTelefone() {
         return telefone;
-    }
-
-    public String getNome() {
-        return nome;
     }
 
     public int getIdade() {
@@ -28,31 +38,43 @@ public class usuario { // INÍCIO
         return email;
     }
 
+    public String getNome() {
+        return nome;
+    }
 
     public void setTelefone() {
         telefone = Integer.parseInt(JOptionPane.showInputDialog("Digite o seu telefone:"));
     }
 
-
     public void setNome() {
         nome = JOptionPane.showInputDialog("Digite o seu nome:");
     }
-
 
     public void setIdade() {
         idade = Integer.parseInt(JOptionPane.showInputDialog("Digite sua idade:"));
     }
 
-
     public void setEmail() {
         email = JOptionPane.showInputDialog("Digite seu email:");
     }
 
+    public void setA1() {
+        A1 = Integer.parseInt(JOptionPane.showInputDialog("Digite a nota da A1:"));
+    }
 
-                                            // FIM GETTERS E SETTERS
+    public void setA2() {
+        A2 = Integer.parseInt(JOptionPane.showInputDialog("Digite a nota da A2:"));
+    }
+
+    public void setA3() {
+        A3 = Integer.parseInt(JOptionPane.showInputDialog("Digite a nota da A3:"));
+    }
 
 
-                                               // INÍCIO MÉTODOS
+    // FIM GETTERS E SETTERS
+
+
+    // INÍCIO MÉTODOS
 
 
     public void IdentificarUsuario() {
@@ -76,12 +98,45 @@ public class usuario { // INÍCIO
         JOptionPane.showMessageDialog(null, "O email do usuário é: " + email);
     }
 
-
-                                                 // FIM MÉTODOS
-
-
+    public void AtribuirNotas() {
+        JOptionPane.showMessageDialog(null, "Digite as notas das avaliações.");
 
 
+        A1 = Integer.parseInt(JOptionPane.showInputDialog("Digite a nota da A1:"));
+        A2 = Integer.parseInt(JOptionPane.showInputDialog("Digite a nota da A2:"));
+        A3 = Integer.parseInt(JOptionPane.showInputDialog("Digite a nota da A3:"));
+    }
+
+    public void MediaNotas() {
+        int soma = A1 + A2 + A3;
+        int media = soma / 3;
+        JOptionPane.showMessageDialog(null, "A soma das notas é: " + soma + "\n" + "A média das notas é: " + media);
+    }
+
+    public void VerificarNotas() {
+        String[] opcoes = {"A1", "A2", "A3"};
+
+        int usuario = JOptionPane.showOptionDialog(null, "Escolha", "Qual nota deseja visualizar?",
+                JOptionPane.DEFAULT_OPTION, JOptionPane.QUESTION_MESSAGE, null, opcoes, opcoes[0]);
+
+        switch (usuario) {
+
+            case 0:
+                JOptionPane.showMessageDialog(null, "A nota da A1 é: " + A1);
+                break;
+
+            case 1:
+                JOptionPane.showMessageDialog(null, "A nota da A2 é: " + A2);
+                break;
+
+            case 2:
+                JOptionPane.showMessageDialog(null, "A nota da A3 é: " + A3);
+                break;
+        }
 
 
-} // FIM
+        // FIM MÉTODOS
+
+
+    }
+}  // Fim

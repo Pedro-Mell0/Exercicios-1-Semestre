@@ -20,13 +20,6 @@ public class Aluno extends usuario{  // INÍCIO
 
                                                  // INÍCIO MÉTODOS
 
-    @Override
-    public void IdentificarUsuario() {
-        setEmail();
-        setIdade();
-        setRA();
-        setTelefone();
-    }
 
 
     @Override
@@ -35,7 +28,13 @@ public class Aluno extends usuario{  // INÍCIO
         JOptionPane.showMessageDialog(null, "Nome: " + getNome() + "\n" + "Idade: " + getIdade() + "\n" + "Email: " + getEmail() + "\n" + "RA: " + RA + "\n" + "Telefone: " + getTelefone());
     }
 
-                                                 // FIM MÉTODOS
+    @Override
+    public void IdentificarUsuario() {
+        super.IdentificarUsuario();
+        setRA();
+    }
+
+    // FIM MÉTODOS
 
 } // FIM
 

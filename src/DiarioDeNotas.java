@@ -2,6 +2,7 @@ import javax.swing.JOptionPane;
 
 public class DiarioDeNotas { // INÍCIO
 
+
                                                       // INÍCIO MAIN
 
     public static void main(String[] args) {
@@ -21,6 +22,8 @@ public class DiarioDeNotas { // INÍCIO
                 JOptionPane.showMessageDialog(null, "Bem-vindo " + aluno.getNome());
                 aluno.IdentificarUsuario();
                 aluno.ConfirmarDados();
+                aluno.VerificarNotas();
+                aluno.MediaNotas();
                 break;
 
             case 1:
@@ -29,8 +32,11 @@ public class DiarioDeNotas { // INÍCIO
                 JOptionPane.showMessageDialog(null, "Bem-vindo " + professor.getNome());
                 professor.IdentificarUsuario();
                 professor.ConfirmarDados();
-                professor.Notas();
+                professor.AtribuirNotas();
+                professor.VerificarNotas();
+                professor.MediaNotas();
                 break;
+
         }
 
     }
