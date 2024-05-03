@@ -10,7 +10,7 @@ public class usuario { // INÍCIO
     private int A1;
     private int A2;
     private int A3;
-
+    int notaAleatoria = (int) (Math.random() * 10);
 
     // GETTERS E SETTERS
 
@@ -74,6 +74,7 @@ public class usuario { // INÍCIO
     // FIM GETTERS E SETTERS
 
 
+
     // INÍCIO MÉTODOS
 
 
@@ -116,21 +117,21 @@ public class usuario { // INÍCIO
     public void VerificarNotas() {
         String[] opcoes = {"A1", "A2", "A3"};
 
-        int usuario = JOptionPane.showOptionDialog(null, "Escolha", "Qual nota deseja visualizar?",
+        int usuario = JOptionPane.showOptionDialog(null, "Qual nota deseja visualizar?", "Escolha",
                 JOptionPane.DEFAULT_OPTION, JOptionPane.QUESTION_MESSAGE, null, opcoes, opcoes[0]);
 
         switch (usuario) {
 
             case 0:
-                JOptionPane.showMessageDialog(null, "A nota da A1 é: " + A1);
+                JOptionPane.showMessageDialog(null, "A nota da A1 é: " + notaAleatoria);
                 break;
 
             case 1:
-                JOptionPane.showMessageDialog(null, "A nota da A2 é: " + A2);
+                JOptionPane.showMessageDialog(null, "A nota da A2 é: " + notaAleatoria);
                 break;
 
             case 2:
-                JOptionPane.showMessageDialog(null, "A nota da A3 é: " + A3);
+                JOptionPane.showMessageDialog(null, "A nota da A3 é: " + notaAleatoria);
                 break;
         }
 
@@ -139,4 +140,10 @@ public class usuario { // INÍCIO
 
 
     }
+
+
+
+
+
+
 }  // Fim

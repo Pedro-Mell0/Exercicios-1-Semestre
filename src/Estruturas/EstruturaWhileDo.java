@@ -1,14 +1,21 @@
 package Estruturas;
 
+import javax.swing.*;
+
 public class EstruturaWhileDo {
     public static void main(String[] args) {
-        int numero = 10;
+        int numero;
+
+
+       numero = Integer.parseInt(JOptionPane.showInputDialog("Insira o valor desejado: "));
+
+
         do {
-            System.out.println(numero);
+            JOptionPane.showMessageDialog(null, numero);
             numero++;
         }
         while (numero <= 20);
         numero++;
-        System.out.println(numero);
+        JOptionPane.showMessageDialog(null, numero);
     }
 }

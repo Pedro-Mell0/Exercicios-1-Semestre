@@ -34,6 +34,12 @@ public class Aluno extends usuario{  // INÍCIO
         setRA();
     }
 
+    public void MediaNotas() {
+        int soma = super.notaAleatoria + super.notaAleatoria + super.notaAleatoria;
+        int media = soma / 3;
+        JOptionPane.showMessageDialog(null, "A soma das notas é: " + soma + "\n" + "A média das notas é: " + media);
+    }
+
     // FIM MÉTODOS
 
 } // FIM
