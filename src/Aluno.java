@@ -1,50 +1,73 @@
-import javax.swing.*;
+import javax.swing.JOptionPane;
+                                                                    //INÍCIO
+public class Aluno {
 
-public class Aluno extends usuario{  // INÍCIO
+    private String nome;
+    private String turma;
+    private double notaFinal;
 
-    private int RA;
 
-                                                // GETTERS E SETTERS
 
-    public int getRA() {
-        return RA;
+                                                            // INÍCIO GETTES E SETTERS
+    public String getNome() {
+        return nome;
     }
 
-    public void setRA() {
-        this.RA = Integer.parseInt(JOptionPane.showInputDialog("Digite seu RA:"));
+
+    public String getTurma() {
+        return turma;
     }
 
 
-                                              // FIM GETTERS E SETTERS
-
-
-                                                 // INÍCIO MÉTODOS
-
-
-
-    @Override
-    public void ConfirmarDados() {
-        JOptionPane.showMessageDialog(null, "Por favor, confirme os dados: ");
-        JOptionPane.showMessageDialog(null, "Nome: " + getNome() + "\n" + "Idade: " + getIdade() + "\n" + "Email: " + getEmail() + "\n" + "RA: " + RA + "\n" + "Telefone: " + getTelefone());
+    public double getNotaFinal() {
+        return notaFinal;
     }
 
-    @Override
-    public void IdentificarUsuario() {
-        super.IdentificarUsuario();
-        setRA();
+
+    public void setNome(String nome) {
+        this.nome = nome;
     }
 
-    public void MediaNotas() {
-        int soma = super.notaAleatoria + super.notaAleatoria + super.notaAleatoria;
-        int media = soma / 3;
-        JOptionPane.showMessageDialog(null, "A soma das notas é: " + soma + "\n" + "A média das notas é: " + media);
+
+    public void setTurma(String turma) {
+        this.turma = turma;
     }
 
-    // FIM MÉTODOS
 
-} // FIM
+    public void setNotaFinal(double notaFinal) {
+        this.notaFinal = notaFinal;
+    }
 
 
 
 
+                                                             // FIM GETTERS E SETTERS
+
+                                                                 // INÍCIO MÉTODOS
+
+    public Aluno(String nome, String turma) { // Construtor
+        this.nome = nome;
+        this.turma = turma;
+    }
+
+
+
+    public void calcularNotaFinal(int NumeroDeAvaliacoes) {
+        double SomarNotas = 0;
+
+        for (int i = 1; i <= NumeroDeAvaliacoes; i++) {
+            String nota = JOptionPane.showInputDialog(null, "Digite a nota da avaliação " + i + ":");
+            double notas = Double.parseDouble(nota);
+            SomarNotas += notas;
+        }
+                                                                  // FIM MÉTODOS
+
+
+        this.notaFinal = SomarNotas / NumeroDeAvaliacoes;
+
+
+
+
+    }
+}                                                                        //FIM
 
