@@ -56,7 +56,7 @@ public class Aluno {
         double SomarNotas = 0;
 
         for (int i = 1; i <= NumeroDeAvaliacoes; i++) {
-            String nota = JOptionPane.showInputDialog(null, "Digite a nota da avaliação " + i + ":");
+            String nota = JOptionPane.showInputDialog(null, "Digite a nota da " + i + "avaliação: " );
             double notas = Double.parseDouble(nota);
             SomarNotas += notas;
         }
